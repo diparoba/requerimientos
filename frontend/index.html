@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysioCare | Fisioterapia Avanzada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PhysioCare</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#ejercicios">Ejercicios</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Recupera tu Movilidad</h1>
+            <p>Especialistas en rehabilitación física y bienestar integral.</p>
+            <button class="btn-primary">Reservar Cita</button>
+        </div>
+    </header>
+
+    <section id="ejercicios" class="section">
+        <h2>Ejercicios de Rehabilitación</h2>
+        <div class="card-container" id="exercises-list">
+            <!-- Dynamically populated -->
+        </div>
+    </section>
+
+    <section id="tratamientos" class="section">
+        <h2>Nuestros Tratamientos</h2>
+        <div class="card-container" id="treatments-list">
+            <!-- Dynamically populated -->
+        </div>
+    </section>
+
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">Chat con Fisioterapeuta</div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-msg" placeholder="Escribe tu mensaje...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

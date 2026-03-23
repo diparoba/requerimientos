@@ -1,0 +1,13 @@
+{
+  "name": "physiocare-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for PhysioCare Physiotherapy App",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
