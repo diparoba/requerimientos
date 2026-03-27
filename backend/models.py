@@ -8,6 +8,8 @@ class Exercise(Base):
     title = Column(String, index=True)
     description = Column(Text)
     video_url = Column(String)
+    image_url = Column(String)
+
 
 class Treatment(Base):
     __tablename__ = "treatments"

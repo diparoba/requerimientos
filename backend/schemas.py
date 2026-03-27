@@ -5,12 +5,15 @@ class ExerciseBase(BaseModel):
     title: str
     description: str
     video_url: Optional[str] = None
+    image_url: Optional[str] = None
+
 
 class Exercise(ExerciseBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }
 
 class TreatmentBase(BaseModel):
     name: str
@@ -19,5 +22,6 @@ class TreatmentBase(BaseModel):
 class Treatment(TreatmentBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }

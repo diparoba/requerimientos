@@ -1,9 +1,13 @@
-from sqlalchemy import create_all, create_engine
+import os
+from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Database URL (using SQLite as default for easy initialization, can be switched to PostgreSQL)
-SQLALCHEMY_DATABASE_URL = "sqlite:///./physio.db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SQLALCHEMY_DATABASE_URL = f"sqlite:///{os.path.join(BASE_DIR, 'physio.db')}"
+
+
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}

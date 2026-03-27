@@ -6,9 +6,15 @@ def init_db():
 
     # Add sample exercises
     exercises = [
-        models.Exercise(title="Lumbar Stretch", description="Basic stretch for lower back pain.", video_url="https://example.com/lumbar"),
-        models.Exercise(title="Neck Mobilization", description="Gentle movements to reduce neck stiffness.", video_url="https://example.com/neck"),
+        models.Exercise(title="Columna Vertebral", description="Ejercicios de estiramiento y fortalecimiento para la espalda y cuello.", video_url="https://example.com/columna"),
+        models.Exercise(title="Hombros", description="Rutinas para mejorar la movilidad y fuerza en la articulación del hombro.", video_url="https://example.com/hombros"),
+        models.Exercise(title="Rodillas", description="Fortalecimiento de cuádriceps y ejercicios de impacto controlado.", video_url="https://example.com/rodillas"),
+        models.Exercise(title="Caderas", description="Movimientos para mejorar la flexibilidad y estabilidad de la cadera.", video_url="https://example.com/caderas"),
+        models.Exercise(title="Manos", description="Ejercicios de motricidad fina y estiramiento de tendones.", video_url="https://example.com/manos"),
+        models.Exercise(title="Pies", description="Fortalecimiento de la planta del pie y ejercicios de equilibrio.", video_url="https://example.com/pies"),
     ]
+
+
 
     # Add sample treatments
     treatments = [
